@@ -129,6 +129,12 @@ $( document ).ready(function() {
 		scrollTop();
 	} );
 
+	// 가격조회 
+
+	$('.calculate').click(function() {
+		$('.total-box-wrap').addClass('fixed');
+	})
+
 	// 스크롤 시 메뉴 변경
 
 	$(window).scroll(function(){
