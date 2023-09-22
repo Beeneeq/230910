@@ -127,6 +127,7 @@ $( document ).ready(function() {
 
     $( '.edit' ).click( function() {
 		scrollTop();
+		$('.total-box-wrap').removeClass('fixed');
 	} );
 
 	// 가격조회 
