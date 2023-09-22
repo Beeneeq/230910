@@ -1,0 +1,980 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="robots" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
+	<link href="" rel="icon" type="image/jpg">
+	<link href="" rel="shortcut icon" type="image/jpg">
+	<link href="" rel="apple-touch-icon" type="image/jpg">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/base.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/common.css?a=1">		 
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> 
+	<script src="./asset/js/swiper.min.js?a=2"></script>	
+	<script src="./asset/js/common.js"></script>
+	</style>
+</head>
+<body> 
+	<div class="wrapper">
+		<header>
+			<div class="header-lnb">
+				<div class="container">
+					<div class="header-lnb-left">
+						<ul>
+							<li><a href="">보상안내</a></li>
+							<li><a href="">고객센터</a></li>
+							<li><a href="">이벤트</a></li>
+							<li><a href="">증명서 발급</a></li>
+						</ul>
+					</div>
+					<div class="header-lnb-right">
+						<ul>
+							<li class="facebook"><a href="">페이스북</a></li>
+							<li class="instagram"><a href="">인스타그램</a></li>
+							<li class="blog"><a href="">블로그</a></li>
+							<li class="kakao"><a href="">카카오</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header-gnb">
+				<div class="container">
+					<a href="javascript:;" class="menu" onclick="menuOpen();">메뉴바</a>
+					<h1><a href=""><img src="./asset/images/logo.png"></a></h1>
+					<a href="" class="service">서비스 <span>알아보기</span></a>
+				</div>
+			</div>
+			<div class="header-mnb">
+				<div class="inner">
+					<div class="mnb-head">
+						<h2><a href=""><img src="./asset/images/logo.png"></a></h2>
+						<a href="javascript:;" onclick="menuClose();" class="close">닫기</a>
+					</div>
+					<div class="mnb-body">
+						<div class="mnb-body-menu">
+							<ul>
+								<li><a href="">보상안내</a></li>
+								<li><a href="">고객센터</a></li>
+								<li><a href="">이벤트</a></li>
+								<li><a href="">증명서 발급</a></li>
+							</ul>
+						</div>
+						<div class="mnb-body-info">
+							<div class="social-box">
+								<ul>
+									<li class="facebook"><a href="">페이스북</a></li>
+									<li class="instagram"><a href="">인스타그램</a></li>
+									<li class="blog"><a href="">블로그</a></li>
+									<li class="kakao"><a href="">카카오</a></li>
+								</ul>
+							</div>
+							<div class="kakao-box mt-lg-24">
+								<b>24시간 알람센터<strong>02.360.2545</strong></b>
+								<a href="">카카오톡 채팅상담</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="title-box">
+					<h2>간편조회</h2>
+					<p><b><em>고객님의 여행정보</em></b>를 입력해 주세요.</p>
+				</div>
+				<div class="white-box middle mt24">
+					<form>
+						<div class="form-box">
+							<div class="form-title">
+								<strong>여행목적을 선택해 주세요</strong>
+							</div>
+							<div class="form-content">
+								<div class="check-button-box">
+									<ul>
+										<li>
+											<input type="radio" name="radio01" id="radio01_01">
+											<label for="radio01_01">유학</label>
+										</li>
+										<li>
+											<input type="radio" name="radio01" id="radio01_02">
+											<label for="radio01_02">워킹홀리데이</label>
+										</li>
+										<li>
+											<input type="radio" name="radio01" id="radio01_03">
+											<label for="radio01_03">해외근무</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="form-title">
+								<strong>현재 체류중이신 국가를 선택해 주세요</strong>
+							</div>
+							<div class="form-content">
+								<div class="check-button-box">
+									<ul>
+										<li>
+											<input type="radio" name="radio02" id="radio02_01">
+											<label for="radio02_01">국내</label>
+										</li>
+										<li>
+											<input type="radio" name="radio02" id="radio02_02">
+											<label for="radio02_02">해외</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="form-content">
+								<div class="notice-box">
+									<dl>
+										<dt>유의사항</dt>
+										<dd><p>해외 체류중 가입은 주재원, 법인소속 근로자, 교환교수만 가입하실 수 있습니다.</p></dd>
+										<dd><p>유학생은 유학생 상품으로 가입해 주세요.</p></dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="form-title">
+								<strong>생년월일/성별</strong>
+							</div>
+							<div class="form-content">
+								<div class="flex flex-vc flex-tj">
+									<div class="col-6 pr8 pr-lg-4">
+										<div class="input-box">
+											<div class="input-box-inner">
+												<input type="text" placeholder="예)20190101">
+											</div>
+										</div>
+									</div>
+									<div class="col-6 pl8 pl-lg-4">
+										<div class="check-button-box">
+											<ul>
+												<li>
+													<input type="radio" name="radio03" id="radio03_01">
+													<label for="radio03_01">남자</label>
+												</li>
+												<li>
+													<input type="radio" name="radio03" id="radio03_02">
+													<label for="radio03_02">여자</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="form-title">
+								<strong>출국일</strong>
+							</div>
+							<div class="form-content">
+								<div class="flex flex-vc flex-tj">
+									<div class="col-6 pr8 pr-lg-4">
+										<div class="date-box">
+											<div class="date-box-inner">
+												<input type="text" class="datepicker" readonly>
+											</div>
+										</div>
+									</div>
+									<div class="col-6 pl8 pl-lg-4">
+										<div class="select-box">
+											<div class="select-box-inner">
+												<select>
+													<option>13시</option>
+													<option>14시</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="form-title">
+								<strong>귀국일</strong>
+							</div>
+							<div class="form-content">
+								<div class="flex flex-vc flex-tj">
+									<div class="col-6 pr8 pr-lg-4">
+										<div class="date-box">
+											<div class="date-box-inner">
+												<input type="text" class="datepicker" readonly>
+											</div>
+										</div>
+									</div>
+									<div class="col-6 pl8 pl-lg-4">
+										<div class="select-box">
+											<div class="select-box-inner">
+												<select>
+													<option>13시</option>
+													<option>14시</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="form-title">
+								<strong>동반인 선택</strong>
+							</div>
+							<div class="form-content">
+								<div class="flex flex-vc flex-tj">
+									<div class="col-6 pr8 pr-lg-4">
+										<div class="select-box">
+											<div class="select-box-inner">
+												<select>
+													<option>4명</option>
+													<option>5명</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="flex flex-vc flex-tj mt10">
+									<div class="col-6 pr8 pr-lg-4">
+										<div class="input-box">
+											<div class="input-box-inner">
+												<input type="text" placeholder="동반인 생년월일">
+											</div>
+										</div>
+									</div>
+									<div class="col-6 pl8 pl-lg-4">
+										<div class="check-button-box">
+											<ul>
+												<li>
+													<input type="radio" name="radio04" id="radio04_01">
+													<label for="radio04_01">남자</label>
+												</li>
+												<li>
+													<input type="radio" name="radio04" id="radio04_02">
+													<label for="radio04_02">여자</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="flex flex-vc flex-tj mt10">
+									<div class="col-6 pr8 pr-lg-4">
+										<div class="input-box">
+											<div class="input-box-inner">
+												<input type="text" placeholder="동반인 생년월일">
+											</div>
+										</div>
+									</div>
+									<div class="col-6 pl8 pl-lg-4">
+										<div class="check-button-box">
+											<ul>
+												<li>
+													<input type="radio" name="radio05" id="radio05_01">
+													<label for="radio05_01">남자</label>
+												</li>
+												<li>
+													<input type="radio" name="radio05" id="radio05_02">
+													<label for="radio05_02">여자</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="flex flex-vc flex-tj mt10">
+									<div class="col-6 pr8 pr-lg-4">
+										<div class="input-box">
+											<div class="input-box-inner">
+												<input type="text" placeholder="동반인 생년월일">
+											</div>
+										</div>
+									</div>
+									<div class="col-6 pl8 pl-lg-4">
+										<div class="check-button-box">
+											<ul>
+												<li>
+													<input type="radio" name="radio06" id="radio06_01">
+													<label for="radio06_01">남자</label>
+												</li>
+												<li>
+													<input type="radio" name="radio06" id="radio06_02">
+													<label for="radio06_02">여자</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="flex flex-vc flex-tj mt10">
+									<div class="col-6 pr8 pr-lg-4">
+										<div class="input-box">
+											<div class="input-box-inner">
+												<input type="text" placeholder="동반인 생년월일">
+											</div>
+										</div>
+									</div>
+									<div class="col-6 pl8 pl-lg-4">
+										<div class="check-button-box">
+											<ul>
+												<li>
+													<input type="radio" name="radio07" id="radio07_01">
+													<label for="radio07_01">남자</label>
+												</li>
+												<li>
+													<input type="radio" name="radio07" id="radio07_02">
+													<label for="radio07_02">여자</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="flex flex-vc flex-tr mt24">
+									<div class="check-box">
+										<div class="check-box-inner">
+											<input type="checkbox" name="check" id="check">
+											<label for="check">동반인 가입을 동의 합니다.</label>
+										</div>
+										<a href="javascript:;" onclick="popupOpen('more');" class="more">자세히 보기</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="form-content">
+								<div class="button-box">
+									<a href="" class="btn btn-active calculate">가격 조회</a>
+								</div>
+								<div class="notice-box mt24">
+									<dl>
+										<dt>유의사항</dt>
+										<dd><p>출국시간 전까지 가입 가능</p></dd>
+										<dd><p>가입 즉시 가입증명서 다운로드 가능</p></dd>
+										<dd><p>동반인은 5명까지 추가 가능</p></dd>
+										<dd><p>1세 ~ 80세까지 가입 가능</p></dd>
+										<dd><p>최대 90일까지 가입 가능</p></dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-box">
+							<div class="form-content">
+							<!-- 0922 수정 -->
+								<div class="total-box-wrap fixed"> <!--가격조회 눌렀을 경우 class에 fixed 추가-->
+									<!-- 0830 수정 -->
+									<div class="total-box mb10">
+										<div class="info-content">
+											<span>2023.12.01</span>
+											<em>~</em>
+											<span>2023.12.31</span>
+											(<span>10</span>일 / <span>2</span>명)
+										</div>
+										<a href="javascript:void(0)" class="edit">수정</a>
+									</div>
+									
+									<!-- 0830 수정 -->
+									<div class="total-box">
+										<span class="level">LV 1</span>
+										<div class="flex flex-vc">
+											<span class="price">70,000원</span>
+											<a href="javascirpt:void(0)" class="btn-line" onClick="openLayer(1)">보장내역 보기</a>
+										</div>
+									</div>
+									<!-- // 0830 수정 -->
+								</div>
+								
+							<div class="form-content">
+								<div class="title-box mt24">
+									<h3>동반 가입자 정보</h3><!-- 0830 텍스트 수정 -->
+								</div>
+								<div class="info-list-box">
+									<ul>
+										<li>
+											<span>2011-01-01</span>
+											<span>12세 / 여자</span>
+											<span>20,000원</span>
+										</li>
+										<li>
+											<span>2011-01-01</span>
+											<span>30세 / 남자</span>
+											<span>50,000원</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- // 0922 수정 -->
+						</div>
+					<form>
+				</div>
+
+				<!-- 0830 추가 -->
+				<div class="hr-txt">
+					의료지원 서비스와 보험을 선택해서 가입하실 수 있습니다.
+				</div>
+				<!-- // 0830 추가 -->
+
+				<!-- 0830 수정 -->
+				<div class="white-box middle mt24">									
+					<div class="title-state-box">
+						<strong>해외의료지원</strong>
+						<div class="check-box">
+							<div class="check-box-inner type01">
+								<input type="checkbox"id="checkbox01">
+								<label for="checkbox01">가입</label>
+							</div>
+						</div>
+					</div>
+					<div class="title-box mt12">
+						<h3>24시간 의료상담 및 병원예약</h3>
+					</div>
+					<p class="common-txt01">여행중 아프면 24시간 언제 어디서든 연락하세요.</p>
+					<div class="table-form-box mt12">
+						<ul>
+							<li>
+								<div class="table-head w-65">
+									<strong>24시 의료 상담</strong>
+								</div>
+								<div class="table-body flex-tr">
+									<b>제공</b>
+								</div>
+							</li>
+							<li>
+								<div class="table-head w-65">
+									<strong>12개과목 전문의 상담</strong>
+								</div>
+								<div class="table-body flex-tr">
+									<b>제공</b>
+								</div>
+							</li>
+							<li>
+								<div class="table-head w-65">
+									<strong>원격진료</strong>
+								</div>
+								<div class="table-body flex-tr">
+									<b>제공</b>
+								</div>
+							</li>
+							<li>
+								<div class="table-head w-65">
+									<strong>병원예약</strong>
+								</div>
+								<div class="table-body flex-tr">
+									<b>제공</b>
+								</div>
+							</li>
+							<li>
+								<div class="table-head w-65">
+									<strong>병원비 대신 지불</strong>
+								</div>
+								<div class="table-body flex-tr">
+									<b>제공</b>
+								</div>
+							</li>
+						</ul>
+					</div>					
+				</div>
+
+				
+				<div class="white-box middle mt24">									
+					<div class="title-state-box">
+						<strong class="memo">필요한 서비스를 추가하세요</strong>
+					</div>
+					<div class="title-box flex flex-tj mt12">
+						<h3>긴급의료이송</h3>
+						<div class="check-box">
+							<div class="check-box-inner type02">
+								<input type="checkbox" id="checkbox02">
+								<label for="checkbox02">추가</label>
+							</div>
+						</div>
+					</div>
+					<p class="common-txt01">긴급한 경우 에어앰뷸런스로 이송해 드리며 이송비용 2억까지 보장해 드립니다.</p>
+					
+					<button type="button" class="btn-more off">자세히 보기</button>
+
+					<div class="table-form-box mt12" style="display: none;">
+						<ul>
+							<li>
+								<div class="table-head w-65">
+									<strong>에어앰뷸런스 이송</strong>
+								</div>
+								<div class="table-body">
+									<b>2억</b>
+								</div>
+							</li>
+							<li>
+								<div class="table-head w-65">
+									<strong>일반항공 이송</strong>
+								</div>
+								<div class="table-body">
+									<b>2천만원</b>
+								</div>
+							</li>
+							<li>
+								<div class="table-head w-65">
+									<strong>국가내 의료이송</strong>
+								</div>
+								<div class="table-body">
+									<b>1억</b>
+								</div>
+							</li>
+							<li>
+								<div class="table-head w-65">
+									<strong>간병인 항공권 제공</strong>
+								</div>
+								<div class="table-body">
+									<b>이코노미 항공권</b>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="title-box flex flex-tj mt24">
+						<h3>건강검진</h3>
+						<div class="check-box">
+							<div class="check-box-inner type02">
+								<input type="checkbox" id="checkbox03">
+								<label for="checkbox03">추가</label>
+							</div>
+						</div>
+					</div>
+					<p class="common-txt01">한국 건강검진 센터에서 1회 무료 검사를 제공해 드립니다.</p>
+
+					<button type="button" class="btn-more off">자세히 보기</button>
+
+					<div class="table-form-box mt12" style="display: none;">
+						<ul>
+							<li>
+								<div class="table-head w-65">
+									<strong>건강검진</strong>
+								</div>
+								<div class="table-body">
+									<b>1회 무료</b>
+								</div>
+							</li>
+							<li>
+								<div class="table-head w-65">
+									<strong>국내 병원예약</strong>
+								</div>
+								<div class="table-body">
+									<b>2천만원</b>
+								</div>
+							</li>
+							<li>
+								<div class="table-head w-65">
+									<strong>비행기, 숙박 예약 대행</strong>
+								</div>
+								<div class="table-body">
+									<b>제공</b>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				
+				<div class="white-box middle mt24">									
+					<div class="title-state-box">
+						<strong class="plan">여행취소 보장</strong>
+						<div class="check-box">
+							<div class="check-box-inner type01">
+								<input type="checkbox"  id="checkbox04">
+								<label for="checkbox04">가입</label>
+							</div>
+						</div>
+					</div>
+					<div class="table-form-box mt12">
+						<ul>
+							<li>
+								<div class="table-head w-65">
+									<strong>항공권, 숙박비</strong>
+								</div>
+								<div class="table-body">
+									<b>100만원</b>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- <div class="white-box middle mt24">									
+					<div class="title-state-box">
+						<strong class="bag">비행기 지연시 라운지 이용권</strong>
+						<div class="check-box">
+							<div class="check-box-inner type01">
+								<input type="checkbox"  id="checkbox05">
+								<label for="checkbox05">가입</label>
+							</div>
+						</div>
+					</div>
+					<div class="table-form-box mt12">
+						<ul>
+							<li>
+								<div class="table-head w-65">
+									<strong>라운지 이용권</strong>
+								</div>
+								<div class="table-body">
+									<b>1회</b>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div> -->
+
+				<div class="white-box middle mt24">									
+					<div class="title-state-box">
+						<strong class="travel">해외여행 보험</strong>
+						<div class="check-box">
+							<div class="check-box-inner type01">
+								<input type="checkbox"  id="checkbox06">
+								<label for="checkbox06">가입</label>
+							</div>
+						</div>
+					</div>
+					<div class="title-box mt12">
+						<h3>해외의료비 보장</h3>
+					</div>
+					<div class="table-form-box">
+						<ul>
+							<li>
+								<div class="table-head w-65">
+									<strong>상해 해외 의료실비</strong>
+								</div>
+								<div class="table-body">
+									<div class="select-box flex-1">
+										<div class="select-box-inner">
+											<select class="tc">
+												<option>선택</option>
+												<option>1만달러</option>
+												<option>3만달러</option>
+												<option>5만달러</option>
+												<option>10만달러</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="table-head w-65">
+									<strong>질병 해외 의료실비</strong>
+								</div>
+								<div class="table-body">
+									<div class="select-box flex-1">
+										<div class="select-box-inner">
+											<select class="tc">
+												<option>선택</option>
+												<option>1만달러</option>
+												<option>3만달러</option>
+												<option>5만달러</option>
+												<option>10만달러</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="title-box mt12">
+						<h3>여행불편 보상</h3>
+					</div>
+					<div class="table-form-box">
+						<ul>
+							<li>
+								<div class="table-head w-65">
+									<strong>휴대품 손해</strong>
+								</div>
+								<div class="table-body">
+									<b>20만원</b>
+								</div>
+							</li>
+							<li>
+								<div class="table-head w-65">
+									<strong>항공편/수화물 지연 비용</strong>
+								</div>
+								<div class="table-body">
+									<b>20만원</b>
+								</div>
+							</li>
+							<li>
+								<div class="table-head w-65">
+									<strong>여행취소 보상</strong>
+								</div>
+								<div class="table-body">
+									<b>20만원</b>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="mt24">
+						<div class="button-box">
+							<a href="" class="btn btn-active write">가입하기</a>
+						</div>
+					</div>
+				</div>
+				<!-- // 0830 수정 -->
+			</div>
+
+
+
+			<div class="popup-box">
+				<div class="box" data-name="more" style="max-width:420px;">
+					<div class="popup-head">
+						<h3>동반인 가입 동의</h3>
+						<a href="javascript:;" class="close" onclick="popupClose();">닫기</a>
+					</div>
+					<div class="popup-body">
+						<div class="popup-body-text">
+							<p>
+								본인은 본 보험계약 피 보험자로 되는 것에 대해 동의 하며, 본인이<br>
+								타인을 대신하여 상품 가입 절차를 이행하는 경우 그 보험가입에<br>
+								대해 해당 타인(들)로 부터 전권을 위임 받았음을 확인합니다.
+							</p>
+						</div>
+						<div class="popup-body-button">
+							<a href="javascript:;" onclick="popupClose();">확인</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="type01">
+			<div class="footer-top">
+				<div class="container">
+					<h2><img src="./asset/images/logo.png"></h2>
+					<ul>
+						<li><a href="">이용약관</a></li>
+						<li><a href="">개인정보처리방침</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="footer-bottom-left">
+						<ul class="list">
+							<li class="list-item">
+								<div class="list-head">
+									<div class="is-pc">
+										<small>인슈플러스 서비스 제공사</small>
+										<b>(주)코리아어시스턴스</b>
+									</div>
+									<div class="is-m">
+										<a href="javascript:;" class="footer-toggle">
+											<small>인슈플러스 서비스 제공사</small>
+											<b>(주)코리아어시스턴스</b>
+										</a>
+									</div>
+								</div>
+								<div class="list-body">
+									<ul>
+										<li>				 
+											<span>대표이사 : 김형태</span>        
+											<span>사업자등록번호 : 110-86-08297</span>
+										</li>
+										<li>
+											<span>서울특별시 서대문구 충정로 7, B1 7호</span>
+										</li>
+										<li>
+											<span>통신판매업신고 : 제2019-서울서대문-0682호</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="list-item">
+								<div class="list-head">
+									<div class="is-pc">
+										<small>인슈플러스 보험 대리점</small>
+										<b>(주)비즈인사이트</b>
+									</div>
+									<div class="is-m">
+										<a href="javascript:;" class="footer-toggle">
+											<small>인슈플러스 보험 대리점</small>
+											<b>(주)비즈인사이트</b>
+										</a>
+									</div>
+								</div>
+								<div class="list-body">
+									<ul>
+										<li>				 
+											<span>대표이사 : 김상수</span>        
+											<span>사업자등록번호 : 107-86-09485</span>
+										</li>
+										<li>
+											<span>서울특별시 충정로7(충정로3가, 구세군빌딩 3층)</span>
+										</li>
+										<li>
+											<span>통신판매업신고 : 제2016-서울서대문-0064호</span>
+											<span>보험대리점등록 : 제2010111034호</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-bottom-right">
+						<div class="kakao-box">
+							<b>24시간 알람센터<strong>02.360.2545</strong></b>
+							<a href="">카카오톡 채팅상담</a>
+						</div>
+					</div>
+					<div class="footer-bottom-copy">
+						Copyright 2019 인슈플러스 CO.LTD All Rights Reserved.
+					</div>
+				</div>
+			</div>
+			<!--
+			<div class="footer-fixed">
+				<ul>
+					<li><a href="">카카오 문의하기</a></li>
+					<li><a href="">간편 가격조회</a></li>
+				</ul>
+			</div>
+			-->
+		</footer>
+	</div>		 
+	<!-- <script src="./asset/js/swiper.js?a=1"></script>	  -->
+	
+	<!-- 0830 팝업 추가 -->
+	<div class="dim-bg" style="display: none; opacity: 0;"></div>
+
+	<div class="layer-container" style="display: none; opacity: 0;" data-layer="layer01">
+		<div class="layer-box">
+			<h3 class="layer-title">보장내역</h3>
+			<h4 class="layer-subtitle">플랜명: 유학 그린</h4>
+			<div class="title-box mt24">
+				<h3>의료비 보장</h3>
+			</div>
+			<div class="table-wrap">
+				<table class="table-type01">
+					<colgroup>
+						<col width="50%">
+						<col width="50%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>보장내역</th>
+							<th>보장한도</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>상해 사망</td>
+							<td>2만달러</td>
+						</tr>
+						<tr>
+							<td class="type01" colspan="2">해외체류중 급격하고도 우연한 외래의 사고로 상해를 입고 그 결과로써 사망하였을 때 보험가입금액 지급 (15세 미만 미보장)</td>
+						</tr>
+						<tr>
+							<td>상해 후유장해</td>
+							<td>2만달러</td>
+						</tr>
+						<tr>
+							<td class="type01" colspan="2">해외체류중 급격하고도 우연한 외래의 사고로 상해를 입어 후유장해가 발생한 경우 장해급수별 가입금액의 3%~100% 지급</td>
+						</tr>
+						<tr>
+							<td>질병사망, 80%후유장해</td>
+							<td>2만달러</td>
+						</tr>
+						<tr>
+							<td class="type01" colspan="2">해외체류중에 발생한 질병으로 인하여 보험기간 중 사망 또는 80% 이상에 해당하는 후유장해가 남았을 경우 보험가입금액 지급 (15세 미만 미보장)</td>
+						</tr>
+						<tr>
+							<td>상해 해외의료실비</td>
+							<td>1만달러</td>
+						</tr>
+						<tr>
+							<td class="type01" colspan="2">해외체류중에 상해로 인하여 해외의료기관에서 치료를 받은 경우 가입한도 내 피보험자가 실제 부담한 의료비 전액 보상</td>
+						</tr>
+						<tr>
+							<td>질병 해외의료실비</td>
+							<td>1만달러</td>
+						</tr>
+						<tr>
+							<td class="type01" colspan="2">해외체류중에 질병으로 인하여 해외의료기관에서 치료를 받은 경우 가입한도 내 피보험자가 실제 부담한 의료비 전액 보상</td>
+						</tr>
+						<tr>
+							<td>중대사고 구조송환비용</td>
+							<td>3만달러</td>
+						</tr>
+						<tr>
+							<td class="type01" colspan="2">유학 및 연수 도중 피보험자가 탑승한 항공기나 선박이 조난 당하거나 상해 및 질병으로 인하여 사망 또는 14일 이상 계속 입원한 경우 발생하는 수색구조비용, 구원자(법정상속인)의 교통비, 숙박비, 유체이송비 및 기타 제잡비를 약관이 정한 바에 따라 보상</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="title-box mt24">
+				<h3>의료지원 서비스</h3>
+			</div>
+			<div class="table-wrap">
+				<table class="table-type01">
+					<colgroup>
+						<col>
+						<col width="35%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>보장내역</th>
+							<th>보장한도</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>해외병원비 대신지불</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>현지 병원예약</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>원격화상진료</td>
+							<td>제공</td>
+						</tr>
+						<tr>
+							<td>24시간 간호사 상담</td>
+							<td>제공</td>
+						</tr>
+						<tr>
+							<td>긴급의료 전화통역</td>
+							<td>제공</td>
+						</tr>
+						<tr>
+							<td>긴급의료 본국이송 (에어앰뷸런스)</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>긴급의료 본국이송 (일반항공)</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>국가내 의료이송</td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="title-box mt24">
+				<h3>해지환급금</h3>
+			</div>
+			<p class="common-txt01">가입 후 중도해지할 경우 미경과 상품가격를 해지환급금으로 지급해 드립니다.</p>
+			<button type="button" class="btn-close" data-layer-btn="layer01" onClick="closeLayer(1)"><span class="tts">팝업 닫기</span></button>
+		</div>
+	</div>
+	<!-- // 0830 팝업 추가 -->
+
+</body>
+</html>

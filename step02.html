@@ -1,0 +1,499 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="robots" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
+	<link href="" rel="icon" type="image/jpg">
+	<link href="" rel="shortcut icon" type="image/jpg">
+	<link href="" rel="apple-touch-icon" type="image/jpg">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/base.css">
+	<link rel="stylesheet" type="text/css" href="./asset/css/common.css?a=1">		 
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> 
+	<script src="./asset/js/swiper.min.js?a=2"></script>	
+	<script src="./asset/js/common.js"></script>
+	</style>
+</head>
+<body> 
+	<div class="wrapper">
+		<header>
+			<div class="header-lnb">
+				<div class="container">
+					<div class="header-lnb-left">
+						<ul>
+							<li><a href="">보상안내</a></li>
+							<li><a href="">고객센터</a></li>
+							<li><a href="">이벤트</a></li>
+							<li><a href="">증명서 발급</a></li>
+						</ul>
+					</div>
+					<div class="header-lnb-right">
+						<ul>
+							<li class="facebook"><a href="">페이스북</a></li>
+							<li class="instagram"><a href="">인스타그램</a></li>
+							<li class="blog"><a href="">블로그</a></li>
+							<li class="kakao"><a href="">카카오</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header-gnb">
+				<div class="container">
+					<a href="javascript:;" class="menu" onclick="menuOpen();">메뉴바</a>
+					<h1><a href=""><img src="./asset/images/logo.png"></a></h1>
+					<a href="" class="service">서비스 <span>알아보기</span></a>
+				</div>
+			</div>
+			<div class="header-mnb">
+				<div class="inner">
+					<div class="mnb-head">
+						<h2><a href=""><img src="./asset/images/logo.png"></a></h2>
+						<a href="javascript:;" onclick="menuClose();" class="close">닫기</a>
+					</div>
+					<div class="mnb-body">
+						<div class="mnb-body-menu">
+							<ul>
+								<li><a href="">보상안내</a></li>
+								<li><a href="">고객센터</a></li>
+								<li><a href="">이벤트</a></li>
+								<li><a href="">증명서 발급</a></li>
+							</ul>
+						</div>
+						<div class="mnb-body-info">
+							<div class="social-box">
+								<ul>
+									<li class="facebook"><a href="">페이스북</a></li>
+									<li class="instagram"><a href="">인스타그램</a></li>
+									<li class="blog"><a href="">블로그</a></li>
+									<li class="kakao"><a href="">카카오</a></li>
+								</ul>
+							</div>
+							<div class="kakao-box mt-lg-24">
+								<b>24시간 알람센터<strong>02.360.2545</strong></b>
+								<a href="">카카오톡 채팅상담</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="title-box">
+					<h2>간편조회</h2>
+					<p><b><em>가입자 정보</em></b>를 입력해 주세요.</p>
+				</div>
+				<div class="white-box middle mt24">
+					<form>
+						<div class="form-box">
+							<div class="form-title">
+								<strong>이름</strong>
+							</div>
+							<div class="form-content">
+								<div class="input-box">
+									<div class="input-box-inner">
+										<input type="text" placeholder="한글 이름을 입력해주세요.">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="form-title">
+								<strong>주민등록번호</strong>
+							</div>
+							<div class="form-content">
+								<div class="flex flex-vc">
+									<div class="form-text-box mr15">
+										<b>900101&nbsp;&nbsp;&nbsp;-</b>
+									</div>
+									<div class="input-box flex-lg-1">
+										<div class="input-box-inner">
+											<input type="text" placeholder="주민등록번호 뒷자리">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="form-title">
+								<strong>휴대폰 번호</strong>
+							</div>
+							<div class="form-content">
+								<div class="input-box">
+									<div class="input-box-inner">
+										<input type="text" placeholder="예)010-8888-9999">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="form-title">
+								<strong>이메일 주소</strong>
+							</div>
+							<div class="form-content">
+								<div class="flex flex-vc">
+									<div class="input-box flex-1">
+										<div class="input-box-inner">
+											<input type="text" placeholder="이메일">
+										</div>
+									</div>
+									<div class="form-text-box mx15 mx-lg-10">
+										<b>@</b>
+									</div>
+									<div class="select-box flex-1">
+										<div class="select-box-inner">
+											<select>
+												<option>선택</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="form-title">
+								<strong>방문국가</strong>
+							</div>
+							<div class="form-content">
+								<div class="input-box flex-1">
+									<div class="input-box-inner">
+										<input type="text" placeholder="방문국가를 선택해주세요.">
+										<a href="javascript:void(0)"  onClick="openLayer(1)" class="search">검색</a>
+									</div>
+								</div>
+								<div class="form-notice-box mt8">
+									<p>※ 여러국가를 방문하는 경우 <b>첫번째 체류 국가</b>를 선택해 주세요.</p>
+								</div>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="form-title">
+								<strong>영문이름</strong>
+							</div>
+							<div class="form-content">
+								<div class="input-box flex-1">
+									<div class="input-box-inner">
+										<input type="text" placeholder="영문이름 (영문가입증명서 필요시)">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="title-box gr">
+							<p><b><em>동반인 정보</em></b>를 입력해 주세요.</p>
+						</div>
+						<div class="form-box mt24">
+							<div class="form-title">
+								<strong>이름</strong>
+							</div>
+							<div class="form-content">
+								<div class="input-box">
+									<div class="input-box-inner">
+										<input type="text" placeholder="한글 이름을 입력해주세요.">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="form-title">
+								<strong>주민등록번호</strong>
+							</div>
+							<div class="form-content">
+								<div class="flex flex-vc">
+									<div class="form-text-box mr15">
+										<b>900101&nbsp;&nbsp;&nbsp;-</b>
+									</div>
+									<div class="input-box flex-lg-1">
+										<div class="input-box-inner">
+											<input type="text" placeholder="주민등록번호 뒷자리">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="form-title">
+								<strong>영문이름</strong>
+							</div>
+							<div class="form-content">
+								<div class="input-box flex-1">
+									<div class="input-box-inner">
+										<input type="text" placeholder="영문이름 (영문가입증명서 필요시)">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="button-box mt42 mt-lg-24">
+							<a href="" class="btn btn-active write">가입하기</a>
+						</div>
+					<form>
+				</div>
+			</div>
+		</section>
+		<footer class="type01">
+			<div class="footer-top">
+				<div class="container">
+					<h2><img src="./asset/images/logo.png"></h2>
+					<ul>
+						<li><a href="">이용약관</a></li>
+						<li><a href="">개인정보처리방침</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="footer-bottom-left">
+						<ul class="list">
+							<li class="list-item">
+								<div class="list-head">
+									<div class="is-pc">
+										<small>인슈플러스 서비스 제공사</small>
+										<b>(주)코리아어시스턴스</b>
+									</div>
+									<div class="is-m">
+										<a href="javascript:;" class="footer-toggle">
+											<small>인슈플러스 서비스 제공사</small>
+											<b>(주)코리아어시스턴스</b>
+										</a>
+									</div>
+								</div>
+								<div class="list-body">
+									<ul>
+										<li>				 
+											<span>대표이사 : 김형태</span>        
+											<span>사업자등록번호 : 110-86-08297</span>
+										</li>
+										<li>
+											<span>서울특별시 서대문구 충정로 7, B1 7호</span>
+										</li>
+										<li>
+											<span>통신판매업신고 : 제2019-서울서대문-0682호</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="list-item">
+								<div class="list-head">
+									<div class="is-pc">
+										<small>인슈플러스 보험 대리점</small>
+										<b>(주)비즈인사이트</b>
+									</div>
+									<div class="is-m">
+										<a href="javascript:;" class="footer-toggle">
+											<small>인슈플러스 보험 대리점</small>
+											<b>(주)비즈인사이트</b>
+										</a>
+									</div>
+								</div>
+								<div class="list-body">
+									<ul>
+										<li>				 
+											<span>대표이사 : 김상수</span>        
+											<span>사업자등록번호 : 107-86-09485</span>
+										</li>
+										<li>
+											<span>서울특별시 충정로7(충정로3가, 구세군빌딩 3층)</span>
+										</li>
+										<li>
+											<span>통신판매업신고 : 제2016-서울서대문-0064호</span>
+											<span>보험대리점등록 : 제2010111034호</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-bottom-right">
+						<div class="kakao-box">
+							<b>24시간 알람센터<strong>02.360.2545</strong></b>
+							<a href="">카카오톡 채팅상담</a>
+						</div>
+					</div>
+					<div class="footer-bottom-copy">
+						Copyright 2019 인슈플러스 CO.LTD All Rights Reserved.
+					</div>
+				</div>
+			</div>
+			<!--
+			<div class="footer-fixed">
+				<ul>
+					<li><a href="">카카오 문의하기</a></li>
+					<li><a href="">간편 가격조회</a></li>
+				</ul>
+			</div>
+			-->
+		</footer>
+	</div>		
+	
+	<!-- 레이어 팝업 -->
+
+	<div class="dim-bg" style="display: none; opacity: 0;"></div>
+
+	<div class="layer-container" style="display: none; opacity: 0;" data-layer="layer01">
+		<div class="layer-box" style="overflow: hidden;">
+			<h3 class="layer-title">방문국가 검색</h3>
+			<div class="gray-box">
+				<p class="common-txt01">
+					※ 여행가는 나라의 여행 제한/금지 여부를 확인하세요.<br>
+					외교부 지정 적색/흑색경보(철수권고/여행금지) 국가로 여행하는 경우 보험가입과 보상이 불가합니다.
+				</p>
+				<div class="flex flex-tj mt24">
+					<div class="button-box w150">
+						<a href="" class="btn btn-active btn-s">외교부 사이트</a>
+					</div>
+					<div class="check-box">
+						<div class="check-box-inner">
+							<input type="checkbox" name="check" id="check">
+							<label for="check">확인</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-box mt24">
+				<div class="form-content">
+					<div class="input-box flex-1">
+						<div class="input-box-inner">
+							<input type="text" placeholder="방문국가를 검색해 주세요.">
+							<a href="javascript:void(0)" class="search">방문국가검색</a>
+						</div>
+					</div>
+					<div class="form-notice-box mt8">
+						<p>※ 여러국가를 방문하는 경우 <b>첫번째 체류 국가</b>를 선택</p>
+					</div>
+				</div>
+			</div>
+			<div class="country-wrap">
+				<table class="table-type01">
+					<colgroup>
+						<col style="width: 50%">
+						<col style="width: 50%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>국가명</th>
+							<th>여행가능</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>가이아나공화국</td>
+							<td>
+								<div class="button-box flex-tc">
+									<a href="javascript:void(0)"  onClick="closeLayer(1)" class="btn btn-white btn-xs">선택</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>감비아</td>
+							<td>
+								<div class="button-box flex-tc">
+									<a href="javascript:void(0)"  onClick="closeLayer(1)" class="btn btn-white btn-xs">선택</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>과테말라</td>
+							<td>
+								<div class="button-box flex-tc">
+									<a href="javascript:void(0)"  onClick="closeLayer(1)" class="btn btn-white btn-xs">선택</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>괌</td>
+							<td>
+								<div class="button-box flex-tc">
+									<a href="javascript:void(0)"  onClick="closeLayer(1)" class="btn btn-white btn-xs">선택</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>그레나다</td>
+							<td>
+								<div class="button-box flex-tc">
+									<a href="javascript:void(0)"  onClick="closeLayer(1)" class="btn btn-white btn-xs">선택</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>그리스</td>
+							<td>
+								<div class="button-box flex-tc">
+									<a href="javascript:void(0)"  onClick="closeLayer(1)" class="btn btn-white btn-xs">선택</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>가이아나공화국</td>
+							<td>
+								<div class="button-box flex-tc">
+									<a href="javascript:void(0)"  onClick="closeLayer(1)" class="btn btn-white btn-xs">선택</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>감비아</td>
+							<td>
+								<div class="button-box flex-tc">
+									<a href="javascript:void(0)"  onClick="closeLayer(1)" class="btn btn-white btn-xs">선택</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>과테말라</td>
+							<td>
+								<div class="button-box flex-tc">
+									<a href="javascript:void(0)"  onClick="closeLayer(1)" class="btn btn-white btn-xs">선택</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>괌</td>
+							<td>
+								<div class="button-box flex-tc">
+									<a href="javascript:void(0)"  onClick="closeLayer(1)" class="btn btn-white btn-xs">선택</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>그레나다</td>
+							<td>
+								<div class="button-box flex-tc">
+									<a href="javascript:void(0)"  onClick="closeLayer(1)" class="btn btn-white btn-xs">선택</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>그리스</td>
+							<td>
+								<div class="button-box flex-tc">
+									<a href="javascript:void(0)"  onClick="closeLayer(1)" class="btn btn-white btn-xs">선택</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<button type="button" class="btn-close" data-layer-btn="layer01" onClick="closeLayer(1)"><span class="tts">팝업 닫기</span></button>
+		</div>
+	</div>
+
+	<!-- // 레이어 팝업 -->
+	
+	<script src="./asset/js/swiper.js?a=1"></script>	      
+</body>
+</html>
